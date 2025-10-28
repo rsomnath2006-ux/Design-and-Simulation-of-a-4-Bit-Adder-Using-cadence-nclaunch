@@ -47,12 +47,12 @@ endmodule
 
 ## Verilog Code for 4-Bit Ripple carry Adder
 ```verilog
-module adder_4bit (
-    input [3:0] A, B,
-    input Cin,
-    output [3:0] Sum,
-    output Cout
-);
+module adder_4bit (A,B,Cin,Sum,Cout);
+    input [3:0] A, B;
+    input Cin;
+    output [3:0] Sum;
+    output Cout;
+
     wire C1, C2, C3;
 
     full_adder FA0 (A[0], B[0], Cin, Sum[0], C1);
