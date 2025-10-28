@@ -32,10 +32,10 @@ The aim is to design and simulate a **4-bit Adder** using **Verilog HDL** and ve
 
 ## Verilog Code for 1-Bit Full Adder
 ```verilog
-module full_adder (
-    input A, B, Cin,
-    output Sum, Cout
-);
+module full_adder (A, B, Cin,Sum, Cout);
+    input A, B, Cin;
+    output Sum, Cout;
+
     assign Sum = A ^ B ^ Cin;
     assign Cout = (A & B) | (B & Cin) | (A & Cin);
 endmodule
