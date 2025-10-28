@@ -70,10 +70,8 @@ module tb_adder_4bit;
     wire Cout;
 
     // Instantiate the 4-bit adder
-    adder_4bit UUT (
-        .A(A), .B(B), .Cin(Cin),
-        .Sum(Sum), .Cout(Cout)
-    );
+    adder_4bit UUT (A,B,Cin,Sum,Cout);
+        
 
     initial begin
                
